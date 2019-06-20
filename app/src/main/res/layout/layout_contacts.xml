@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/got_a_question_we_d_love_to_hear_from" />
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/you_send_us_a_message_and_we_ll_respond" />
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/as_soon_as_possible" />
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/namestar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:met_hideUnderline="true" />
+
+        </LinearLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/e_mailstar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:met_hideUnderline="true" />
+
+        </LinearLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/telephone_number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:met_hideUnderline="true" />
+
+        </LinearLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/case_category" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="@string/select_case_category"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="center"
+                app:met_hideUnderline="true"
+                app:met_textColorHint="@color/black" />
+
+        </LinearLayout>
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/message" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="top"
+                android:maxLength="300"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:met_hideUnderline="true" />
+
+        </LinearLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="* Obligatable fields " />
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:id="@+id/txt_underline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Our Customer service is open:"
+            android:textColorLink="@color/gray_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:background="@color/gray_text" />
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Weekdays - 9:00 - 17:00" />
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Weekends and Holidays - Closed" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/lyt_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/www" />
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="www.picmob.lv"
+                    android:textColor="@color/gray_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ee" />
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="info@picmob.lv"
+                    android:textColor="@color/gray_text" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/telephone" />
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_mob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="+371 28673882"
+                    android:textColor="@color/gray_text" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_ripple_pink"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <!--<ImageView-->
+        <!--android:id="@+id/Iv_logo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="130dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+
+        <!--<com.picmob.AppCustomView.CustomTextViewNormal-->
+        <!--android:id="@+id/txt_url"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text=""-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:textColor="@color/black"/>-->
+
+        <!--<com.picmob.AppCustomView.CustomTextViewNormal-->
+        <!--android:id="@+id/txt_mail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text=""-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:textColor="@color/black"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<com.picmob.AppCustomView.CustomTextViewNormal-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text=""-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:textColor="@color/black"/>-->
+
+        <!--<com.picmob.AppCustomView.CustomTextViewNormal-->
+        <!--android:id="@+id/txt_mob"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text=""-->
+        <!--android:gravity=""-->
+        <!--android:textColor="@color/black"/>-->
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</ScrollView>

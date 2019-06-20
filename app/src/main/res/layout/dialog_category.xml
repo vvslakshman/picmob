@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ddg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_dialog_curved"
+        android:layout_marginBottom="0dp"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/lyt_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+
+        <CheckBox
+            android:id="@+id/cb_myorder"
+            android:layout_width="30dp"
+            android:layout_height="23dp"
+            android:button="@drawable/custom_checkbox"
+            android:enabled="true"
+            android:checked="false"
+            android:clickable="false"
+            />
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My order"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/darker_gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_shipping"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping/Delivery"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_returns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_returns"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Returns/Excahnge"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/lyt_claims"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_claims"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claims"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/lyt_special"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_special"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special offers/Discount"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lyt_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_payment"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lyt_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_product"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product questions"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/lyt_collab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_collab"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collaborations/Press"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lyt_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+            <CheckBox
+                android:id="@+id/cb_other"
+                android:layout_width="30dp"
+                android:layout_height="23dp"
+                android:button="@drawable/custom_checkbox"
+                android:layout_gravity="end|center_vertical|center_horizontal|center"
+                android:gravity="end|center|bottom"
+                android:enabled="true"
+                android:clickable="false"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/darker_gray"/>
+
+
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/border_ripple_pink"
+        android:text="@string/ok"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

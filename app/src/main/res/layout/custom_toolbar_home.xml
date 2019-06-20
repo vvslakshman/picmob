@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_toolbar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:gravity="center"
+    android:elevation="5dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/transparent"></android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menuicon_drawable"
+        android:layout_centerVertical="true"/>
+
+    <com.picmob.AppCustomView.CustomTextViewBold
+        android:layout_centerVertical="true"
+        android:id="@+id/tvTitle"
+        android:visibility="visible"
+        android:text="PICMOB"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:textSize="18sp"/>
+
+
+    <GridLayout
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:columnCount="2">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/Iv_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/giftbox"
+                />
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:id="@+id/txt_counter"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/custom_border_counter"
+                android:layout_gravity="top|end|center"/>
+
+
+        </FrameLayout>
+    </GridLayout>
+
+    <!--<View-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:layout_below="@id/tvTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:elevation="1dp"-->
+        <!--android:background="@color/lighter_gray"/>-->
+
+</RelativeLayout>

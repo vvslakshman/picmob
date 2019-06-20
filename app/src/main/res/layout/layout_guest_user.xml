@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/custom_toolbar" android:id="@+id/df"/>
+
+    <LinearLayout
+        android:id="@+id/lkj"
+        android:layout_below="@id/df"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editfirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/first_name"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp">
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/last_name"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_border">
+
+
+        <com.picmob.AppCustomView.CustomEditTextBold
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/white"
+            app:met_hideUnderline="true"
+            android:hint="@string/email"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/contact_number"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/sign_in"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

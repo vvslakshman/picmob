@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/fb"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+</RelativeLayout>

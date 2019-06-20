@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_dialog_curved"
+    android:layout_marginTop="35dp"
+    android:layout_marginBottom="35dp"
+   >
+
+
+        <RelativeLayout
+            android:id="@+id/searchFrame"
+            android:layout_below="@+id/lytToolbar"
+            android:layout_margin="1dp"
+            android:weightSum="10"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="6dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imgLocation"
+                    android:src="@drawable/places_ic_search"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+
+                <AutoCompleteTextView
+                    android:layout_margin="6dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgLocation"
+                    android:id="@+id/search_box"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_a_location"
+                    android:imeOptions="actionDone"
+                    android:layout_gravity="center"
+                    android:dropDownVerticalOffset="5dp"
+                    android:dropDownWidth="wrap_content"
+                    android:inputType="textAutoComplete|textAutoCorrect"
+                    android:popupBackground="@android:color/white"
+                    android:textColor="@android:color/black">
+                </AutoCompleteTextView>
+
+                <View
+                    android:layout_below="@id/search_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                        android:background="@color/gray_text"/>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/searchFrame"
+            android:id="@+id/placeRecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <com.picmob.AppCustomView.CustomTextViewBold
+            android:id="@+id/dfg"
+            android:layout_below="@+id/placeRecycleview"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nearby_stations"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_bold"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/dfg"
+            android:layout_above="@id/btn_ok"
+            android:id="@+id/recycleview"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_ripple_pink"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"/>
+
+
+
+</RelativeLayout>

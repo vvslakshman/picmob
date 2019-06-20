@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <include android:id="@+id/fd" layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_below="@id/fd"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/gray_text"
+            android:text="@string/enter_registered_email_id_for_otp"/>
+
+
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="@color/gray_text"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="14dp"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:background="@drawable/edittext_border"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_otp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/colorAccent"
+        />
+</RelativeLayout>

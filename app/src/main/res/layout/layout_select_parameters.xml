@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/custom_toolbar" android:id="@+id/tt"/>
+
+
+    <!--<ScrollView-->
+        <!--android:layout_below="@+id/tt"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true">-->
+
+    <RelativeLayout
+        android:layout_below="@id/tt"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/llt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+              <com.picmob.AppCustomView.CustomTextViewNormal
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/paper"
+                  android:textColor="@color/gray_text"
+                  android:textSize="16sp"
+                 android:fontFamily="@font/montserrat_semibold"/>
+
+
+                <View
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lighter_gray"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fgtt"
+            android:layout_above="@id/drt"
+            android:layout_below="@id/llt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cropping"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"
+               android:fontFamily="@font/montserrat_semibold"/>
+
+
+            <View
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lighter_gray"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerviewcropping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                   />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drt"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_addPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_photos"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/plus_white_drawable"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:background="@drawable/border_ripple_pink"
+                />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@drawable/border_ripple_pink"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--</ScrollView>-->
+
+</RelativeLayout>

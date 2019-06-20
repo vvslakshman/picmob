@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ff"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.picmob.AppCustomView.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_information"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lighter_gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hh"
+        android:layout_below="@id/ff"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/single_click_to_select_the_photo_and"
+        android:textColor="@color/gray_text"
+        android:textSize="16sp"/>
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/double_click_to_enlarge_the_photo"
+            android:textColor="@color/gray_text"
+            android:textSize="16sp"/>
+
+
+        <CheckBox
+            android:id="@+id/checkob_notshow"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't Show again"
+           />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/hh"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/colorAccent"/>
+
+
+</RelativeLayout>

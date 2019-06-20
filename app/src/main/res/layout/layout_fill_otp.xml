@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <include android:id="@+id/fd" layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_below="@id/fd"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/gray_text"
+            android:text="@string/otp_sent_on_your_email_id"/>
+
+
+
+        <com.picmob.AppCustomView.PinEntryEditText
+            android:id="@+id/ed_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:cursorVisible="true"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textIsSelectable="false"
+            android:textColor="@color/gray_text"
+            android:padding="14dp"
+          />
+
+        <com.picmob.AppCustomView.CustomTextViewBold
+            android:id="@+id/tv_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_otp"
+            android:textColor="@color/gray_text"
+            android:textSize="16sp"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/colorAccent"
+        />
+</RelativeLayout>

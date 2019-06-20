@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="114dp"
+    android:layout_height="114dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/mSnackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+
+        >
+
+        <com.picmob.AppCustomView.RoundRectCornerImageView
+            android:id="@+id/iv_image"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/selected_photo" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:button="@drawable/custom_checkbox"
+            android:checked="false"
+            android:clickable="false"
+            android:elevation="1dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

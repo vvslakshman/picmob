@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:background="@drawable/login_bg_nw"
+            android:layout_height="340dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/plogo"/>
+        </RelativeLayout>
+
+            <!--<com.picmob.AppCustomView.CustomTextViewBold-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:text="SIGN IN"-->
+            <!--android:fontFamily="@font/montserrat_semibold"-->
+            <!--android:paddingBottom="20dp"-->
+            <!--android:textColor="@color/gray_text"-->
+            <!--android:textSize="18sp"/>-->
+        <!--</RelativeLayout>-->
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ds"-->
+        <!--android:layout_below="@id/bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true">-->
+
+        <!---->
+
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/lkj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-32dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/edittext_border"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginRight="10dp">-->
+
+
+            <!--<com.picmob.AppCustomView.CustomEditTextBold-->
+            <!--android:id="@+id/editfirst"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:backgroundTint="@color/white"-->
+            <!--app:met_hideUnderline="true"-->
+            <!--android:hint="First Name"/>-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/edittext_border"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginRight="10dp">-->
+
+            <!--<com.picmob.AppCustomView.CustomEditTextBold-->
+            <!--android:id="@+id/editLast"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:backgroundTint="@color/white"-->
+            <!--app:met_hideUnderline="true"-->
+            <!--android:hint="Last Name"/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_lightgray_border">
+
+
+                <com.picmob.AppCustomView.CustomEditTextBold
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="@color/white"
+                    app:met_hideUnderline="true"
+                    android:hint="@string/email"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_lightgray_border">
+
+
+                <com.picmob.AppCustomView.CustomEditTextBold
+                    android:id="@+id/editPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/white"
+                    app:met_hideUnderline="true"
+                    android:hint="@string/password"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_ripple_pink"
+                    android:text="@string/sign_in"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/dont_have_an_acount"
+                    android:textColor="@color/gray_text"/>
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:id="@+id/txt_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/sign_up_here"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/gray_text"/>
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:id="@+id/txt_forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_here"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp">
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/gray_text"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/fb"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:paddingLeft="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:paddingRight="3dp"
+                    android:background="@drawable/edittext_border"
+                    android:backgroundTint="@color/colorPrimary"
+                    />
+
+
+                <Button
+                    android:id="@+id/btn_insta"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/instagram"
+                    android:textColor="@color/gray_text"
+                    android:drawableLeft="@drawable/instag"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/edittext_border"
+                    />
+
+
+                <Button
+                    android:id="@+id/btn_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="@string/guest_user"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="3dp"
+                    android:background="@drawable/edittext_border"
+                    />
+
+
+                <!--<com.picmob.AppCustomView.CustomTextViewBold-->
+                <!--android:id="@+id/tv_guest"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Guest User"-->
+                <!--android:textSize="10sp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/edittext_border"-->
+                <!--android:fontFamily="@font/montserrat_regular"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_horizontal"/>-->
+
+
+            </LinearLayout>
+
+
+            <!--<com.picmob.AppCustomView.CustomTextViewBold-->
+            <!--android:id="@+id/txt_forgot"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Forgot Password ?"-->
+            <!--android:gravity="right"-->
+            <!--android:fontFamily="@font/montserrat_regular"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:textColor="@color/gray_text"-->
+            <!--android:textSize="14sp"/>-->
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

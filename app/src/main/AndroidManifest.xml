@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.picmob">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:name=".Networking.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.picmob.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCUzGOADFLJRI4GLJ5vGkGq-7-3IjBS7zk" />
+
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:autoRemoveFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name=".Activity.DefaultActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.SelectLanguageActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Language"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:configChanges="locale|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".Activity.CommonSearchActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.InstagramWebView"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.Selected_Photos"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.PhotosActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.SelectParametersActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.PrintFrameActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.GiftBoxActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".Activity.PhotoAlbumActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.PhotosOverviewActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.EditPhotoActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.YourOrderActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="launch.me.action.LAUNCH_IT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".Activity.ProductsActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.EmailIdActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.FillOTP"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.ResetPassword"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.UploadImage"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.GuestUserActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.DeleiveryActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <activity
+            android:name=".Activity.PaymentDetailActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.picmob.braintree" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.OrderPlaced"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".Activity.DeliveryOptionActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".Activity.EuropeanCountryActivity"
+            android:theme="@style/Transparent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".Activity.OmnivaAddressActivity"
+            android:theme="@style/Transparent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".Activity.OrderingActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.GrayStatusBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".Activity.CropIwaActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BlackStatusBar"
+            android:windowSoftInputMode="stateHidden" />
+
+    </application>
+
+</manifest>

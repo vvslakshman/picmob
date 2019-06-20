@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/save_your_information_once_and_delivery_details"
+            android:textColor="@color/gray_text"/>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/fill_automatically_on_end_of_order"
+            android:textColor="@color/gray_text"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:src="@drawable/dummy"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/topPanel"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp">
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/first_name"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editfirstname"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/name_imgdrawable"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColorHint="@color/gray_text"
+                android:drawablePadding="8dp"
+                android:singleLine="true"
+               />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:theme="@style/TextLabel"
+            android:hint="@string/last_name"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editLastName"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/name_imgdrawable"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                android:singleLine="true"
+                />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel"
+            android:hint="@string/email"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editEmail"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/email_imgdrawable"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                android:singleLine="true"
+               />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel"
+            android:hint="@string/contact_number">
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editPhone"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/phone_imgdrawable"
+                android:inputType="phone"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                android:drawablePadding="8dp"
+                android:singleLine="true"
+                />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel"
+            android:hint="@string/enter_country"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editCountry"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:fontFamily="@font/montserrat_regular"
+                android:drawableLeft="@drawable/country_drawable"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="8dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+               />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel"
+            android:hint="@string/enter_city"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editCity"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/city_drawable"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColorHint="@color/gray_text"
+                />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel"
+            android:hint="@string/enter_address"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editAddress"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/address_drawable"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColorHint="@color/gray_text"
+                />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+
+        <com.picmob.AppCustomView.CustomTextInputLayout
+            android:id="@+id/inputLytPostCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel"
+            android:hint="@string/enter_post_code"
+            >
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editPostCode"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_errorColor="@color/red"
+                android:drawableLeft="@drawable/post_code_drawable"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_text"
+                />
+
+        </com.picmob.AppCustomView.CustomTextInputLayout>
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_ripple_pink"
+            android:text="@string/save"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

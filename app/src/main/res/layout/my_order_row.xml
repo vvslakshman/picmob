@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:nestedScrollingEnabled="true"
+    android:layout_marginBottom="1dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:background="@drawable/shadow"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="25dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="3dp"
+        card_view:cardBackgroundColor="@color/white"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orders"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/gray_text"
+                android:textSize="18sp"/>
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="01/10/2018"
+                android:textColor="@color/gray_text"/>
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:id="@+id/txt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Declined"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_gravity="right"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darker_gray"/>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+            <!--<View-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/darker_gray"/>-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shipping"
+                    android:layout_weight="0.75"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_shipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:text=" Standard Shipping dfbgd gddg"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_shipping_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_weight="0.7"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/gray_text"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="@string/place"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    android:text="Standard Shippi"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/gray_text"
+            android:textSize="14sp"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                android:id="@+id/txt_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:text="Credit Card"
+                android:textColor="@color/gray_text"
+                android:textSize="14sp" />
+
+
+
+
+                <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="0.7">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".3"-->
+            <!--android:padding="2dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<com.picmob.AppCustomView.CustomTextViewNormal-->
+            <!--android:id="@+id/txt_payment"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/montserrat_regular"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:text="Credit Card"-->
+            <!--android:textColor="@color/gray_text"-->
+            <!--android:textSize="14sp" />-->
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18sp"-->
+            <!--android:layout_gravity="right|center"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:src="@drawable/arrow_down"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_marginRight="13dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@color/darker_gray"/>-->
+
+            <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.7"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/gray_text"
+                    android:textSize="16sp"/>
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:id="@+id/txt_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="45.00"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

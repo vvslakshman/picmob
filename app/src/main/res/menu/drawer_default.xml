@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_pos_home"
+            android:icon="@drawable/homedrawable"
+            android:title="@string/Home" />
+
+        <item
+            android:id="@+id/menu_pos_myorders"
+            android:icon="@drawable/myordersdrawable"
+            android:title="@string/myorders" />
+
+        <item
+            android:id="@+id/menu_pos_settings"
+            android:icon="@drawable/settingsdrawable"
+            android:title="@string/account" />
+
+        <item
+            android:id="@+id/menu_pos_info"
+            android:icon="@drawable/infodrawable"
+            android:title="@string/info_help" />
+
+        <item
+            android:id="@+id/menu_pos_contacts"
+            android:icon="@drawable/contact_usdrawable"
+            android:title="@string/contact_us" />
+
+        <item
+            android:id="@+id/menu_pos_aboutus"
+            android:icon="@drawable/aboutusdrawable"
+            android:title="@string/about_us" />
+    </group>
+
+
+</menu>

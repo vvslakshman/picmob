@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.picmob.AppCustomView.CustomTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/please_select_a_topic"
+        android:textSize="14sp"
+        android:textColor="@color/gray_text"
+        android:fontFamily="@font/montserrat_semibold"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:layout_margin="3dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_ordering"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/ordering"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_shipping"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/shipping_delivery"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_returns"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/returns_claims"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_payment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/pay_ment"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_offers"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/offers"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_myaccount"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/myaccount"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_privacy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/privacy_policy"-->
+        <!--android:fontFamily="@font/montserrat_semibold"-->
+        <!--android:background="@drawable/border_ripple_gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@color/gray_text"/>-->
+
+
+</LinearLayout>

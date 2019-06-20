@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/picmob"
+        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <com.picmob.AppCustomView.CustomTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/rageitalicregular"
+        android:text="Light Tomorrow with Today"/>
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/share"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:cropToPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/copied"></ImageView>
+
+</RelativeLayout>

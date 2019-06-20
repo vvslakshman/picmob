@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/df"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="140dp"
+                />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_below="@+id/pager"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                app:ci_height="5dp"
+                app:ci_width="5dp"
+                app:ci_drawable="@drawable/dd"
+                app:ci_margin="4dp"
+                app:ci_drawable_unselected="@drawable/ff"
+                />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/df"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="1dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
