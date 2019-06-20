@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/msnackView"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/imagecontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewFitPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/giftbox_product"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/imagecontainer"
+            app:layout_constraintEnd_toEndOf="@id/imagecontainer"
+            app:layout_constraintStart_toStartOf="@id/imagecontainer"
+            app:layout_constraintTop_toTopOf="@id/imagecontainer" />
+
+        <ImageView
+            android:id="@+id/viewtop"
+            android:layout_width="0dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/imageViewFitPaper"
+            app:layout_constraintStart_toStartOf="@id/imageViewFitPaper"
+            app:layout_constraintTop_toTopOf="@id/imageViewFitPaper"></ImageView>
+
+        <ImageView
+            android:id="@+id/viewbottom"
+            android:layout_width="0dp"
+            android:layout_height="7dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewFitPaper"
+            app:layout_constraintEnd_toEndOf="@id/imageViewFitPaper"
+            app:layout_constraintStart_toStartOf="@id/imageViewFitPaper"></ImageView>
+
+        <ImageView
+            android:id="@+id/viewleft"
+            android:layout_width="9dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFitPaper"
+            app:layout_constraintStart_toStartOf="@+id/imageViewFitPaper"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFitPaper"></ImageView>
+
+        <ImageView
+            android:id="@+id/viewright"
+            android:layout_width="9dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFitPaper"
+            app:layout_constraintEnd_toEndOf="@id/imageViewFitPaper"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFitPaper"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/imageViewFitPaperOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/giftbox_product"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imagecontainer"
+            app:layout_constraintEnd_toEndOf="@id/imagecontainer"
+            app:layout_constraintStart_toStartOf="@id/imagecontainer"
+            app:layout_constraintTop_toTopOf="@id/imagecontainer" />
+
+
+        <ImageView
+            android:id="@+id/Iv_cross"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cros"
+            app:layout_constraintStart_toStartOf="@+id/imageViewFitPaper"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFitPaper" />
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:id="@+id/txt_count"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/custom_border_curverd_pink"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/imageViewFitPaper"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFitPaper" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

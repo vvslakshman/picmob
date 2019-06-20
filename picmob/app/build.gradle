@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.picmob"
+        minSdkVersion 18
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://mint.splunk.com/gradle/"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //butterKnife
+    implementation 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    //fordesign
+    implementation 'com.android.support:design:27.1.1'
+    //its for show item as a list using recycleview
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    //edittext
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    //facebook
+    compile 'com.facebook.android:facebook-android-sdk:4.+'
+    //retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    //IndicatorSwiper
+    compile 'me.relex:circleindicator:1.2.2@aar'
+    //for device token
+    implementation 'com.google.firebase:firebase-core:10.2.1'
+    implementation 'com.google.android.gms:play-services-places:10.2.1'
+
+    implementation "com.splunk.mint:mint:5.0.0"
+    //ProgressDialog
+    implementation 'com.victor:lib:1.0.4'
+    //glide to upload image
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+
+    implementation 'com.braintreepayments.api:braintree:2.0.1'
+    implementation 'com.braintreepayments.api:drop-in:2.0.1'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
+    implementation 'com.balysv:material-ripple:1.0.2'
+    compile project(":ucrop")
+    implementation 'com.steelkiwi:cropiwa:1.0.3'
+    implementation 'com.yarolegovich:mp:1.0.5'
+
+}
+apply plugin: 'com.google.gms.google-services'

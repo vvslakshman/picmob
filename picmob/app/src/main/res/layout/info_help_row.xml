@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    android:layout_height="wrap_content">
+
+
+    <Button
+    android:id="@+id/btn_ordering"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:text="@string/ordering"
+    android:fontFamily="@font/montserrat_semibold"
+    android:background="@drawable/border_ripple_gray"
+    android:textSize="16sp"
+    android:textColor="@color/gray_text"/>
+
+</LinearLayout>

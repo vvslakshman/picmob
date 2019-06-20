@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/custom_toolbar" android:id="@+id/fff"/>
+
+
+
+    <ScrollView
+        android:layout_above="@id/dfs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fff"
+        android:fillViewport="true">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+        <com.picmob.AppCustomView.CustomTextViewBold
+            android:id="@+id/txt_omnivaBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Omniva Box"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/custom_border_curverd_pink"/>
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:id="@+id/txt_omnivaBox_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Omniva Box"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/edittext_border"/>
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:id="@+id/txt_omnivaCourier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Omniva Courier"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:background="@drawable/edittext_border"/>
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:id="@+id/txt_omnivaCourier_pink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Omniva Courier"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:visibility="gone"
+                android:background="@drawable/custom_border_curverd_pink"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+               >
+
+
+                <EditText
+                    android:id="@+id/editFirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:drawablePadding="15dp"
+                    android:inputType="text"
+                    android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/darker_gray"
+                    android:drawableLeft="@drawable/name_imgdrawable"
+                    android:backgroundTint="@color/gray_text"
+                    android:hint="@string/enter_first_name"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/editLastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:drawablePadding="15dp"
+                    android:inputType="text"
+                    android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/darker_gray"
+                    android:drawableLeft="@drawable/name_imgdrawable"
+                    android:backgroundTint="@color/gray_text"
+                    android:hint="@string/enter_last_name"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:digits="1234567890"
+                    android:drawablePadding="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/darker_gray"
+                    android:imeOptions="actionDone"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/phone_imgdrawable"
+                    android:backgroundTint="@color/gray_text"
+                    android:hint="@string/enter_phone_number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:paddingBottom="15dp"
+                    android:imeOptions="actionDone"
+                    android:drawablePadding="15dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:textColorHint="@color/darker_gray"
+                    android:drawableLeft="@drawable/email_imgdrawable"
+                    android:backgroundTint="@color/gray_text"
+                    android:hint="@string/enter_email_address"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_country"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_country"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="16sp"
+                android:textColor="@color/gray_text"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_entercountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            >
+
+
+            <EditText
+                android:id="@+id/editCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/darker_gray"
+                android:drawableLeft="@drawable/country_drawable"
+                android:backgroundTint="@color/gray_text"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/select_country"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            >
+
+
+            <EditText
+                android:id="@+id/editCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/darker_gray"
+                android:drawableLeft="@drawable/city_drawable"
+                android:backgroundTint="@color/gray_text"
+                android:hint="@string/enter_city"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            >
+
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:drawablePadding="15dp"
+                android:singleLine="true"
+                android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/darker_gray"
+                android:drawableLeft="@drawable/address_drawable"
+                android:backgroundTint="@color/gray_text"
+                android:hint="@string/enter_address"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_addressOmniva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="6dp"
+            >
+
+
+            <EditText
+                android:id="@+id/editAddressOmniva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:drawablePadding="15dp"
+                android:singleLine="true"
+                android:clickable="true"
+                android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                android:focusable="false"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/darker_gray"
+                android:drawableLeft="@drawable/address_drawable"
+                android:backgroundTint="@color/gray_text"
+                android:hint="@string/enter_address"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lyt_postcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            >
+
+
+            <EditText
+                android:id="@+id/editPostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:drawablePadding="15dp"
+                android:digits="qwertyuiopasdfghjklzxcvbnm 1234567890 QWERTYUIOPASDFGHJKLZXCVBNM"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/gray_text"
+                android:textColorHint="@color/darker_gray"
+                android:drawableLeft="@drawable/post_code_drawable"
+                android:backgroundTint="@color/gray_text"
+                android:hint="@string/enter_post_code"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/dfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/price_colon"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"/>
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_colon"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"
+                android:textSize="24sp"/>
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:id="@+id/txt_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ripple_pink"
+        android:text="@string/next"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

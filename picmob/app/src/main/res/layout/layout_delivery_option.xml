@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/msnackView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include android:id="@+id/gt" layout="@layout/custom_toolbar"/>
+
+    <RelativeLayout
+        android:layout_below="@id/gt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/lyt_parcel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="12dp"
+        android:background="@drawable/custom_border_curverd_pink"
+        >
+
+
+    <ImageView
+        android:id="@+id/Iv_first"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:layout_weight="2.2"
+        android:src="@drawable/omniva"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+
+        <com.picmob.AppCustomView.CustomTextViewBold
+            android:id="@+id/txt_paper1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parcel_machine"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:id="@+id/txt_paper1d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/latvia_estonia_lithuania"
+            android:textSize="12sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/gray_text"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+    <!--<View-->
+        <!--android:id="@+id/dd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:layout_below="@id/lyt_parcel"-->
+        <!--android:background="@color/gray_text"/>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/lyt_courier"
+        android:layout_below="@id/lyt_parcel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:layout_weight="2.2"
+            android:src="@drawable/omniva"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/courier"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/latvia_estonia_lithuania"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_below="@id/lyt_courier"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:id="@+id/lkj"-->
+        <!--android:background="@color/gray_text"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/lyt_pasts"
+        android:layout_below="@id/lyt_courier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:layout_margin="8dp"
+        android:padding="12dp"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="2.2"
+            android:src="@drawable/pasts"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/postal_services"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/europe_union"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/gray_text"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/border_ripple_pink"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

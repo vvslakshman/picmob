@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/border_dialog_curved"
+    android:layout_height="wrap_content">
+
+
+    <com.picmob.AppCustomView.CustomTextViewBold
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_promotional_or_gift_code"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/gray_text"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/edittext_lightgray_border">
+
+        <com.picmob.AppCustomView.CustomEditTextBold
+            android:id="@+id/editCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:backgroundTint="@color/white"
+            app:met_hideUnderline="true"
+            android:textAlignment="center"
+            app:met_textColorHint="@color/gray_text"
+            android:hint="@string/enter_code"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ripple_pink"
+        android:text="@string/apply"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+</LinearLayout>
+</RelativeLayout>

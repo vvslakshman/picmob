@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/mahroon"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/lld"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+            <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Language"
+            android:padding="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="14sp"
+            android:background="@drawable/border_curved_top"
+            android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ddg"
+            android:orientation="vertical"
+            android:layout_below="@id/lld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="0dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/lyt_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/flag_english"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:layout_gravity="end|center_vertical|center_horizontal|center"
+                    android:layout_weight="1.5"
+                    android:gravity="end|center|bottom"
+                    android:enabled="true"
+                    android:checked="true"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darker_gray"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_latvia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/flag_latvia"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Latvia"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_latvia"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:layout_gravity="end|center_vertical|center_horizontal|center"
+                    android:layout_weight="1.5"
+                    android:gravity="end|center|bottom"
+                    android:enabled="true"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darker_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_estonia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/flag_estonia"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estonia"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_text"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_estonia"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:layout_gravity="end|center_vertical|center_horizontal|center"
+                    android:layout_weight="1.5"
+                    android:gravity="end|center|bottom"
+                    android:enabled="true"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darker_gray"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_lithuania"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/flag_lithuania"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lithuania"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"
+                    android:layout_weight=".4"
+                    android:layout_gravity="center"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_lithuania"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:layout_gravity="end|center_vertical|center_horizontal|center"
+                    android:layout_weight="1.5"
+                    android:gravity="end|center|bottom"
+                    android:enabled="true"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/darker_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_russia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/flag_russia"/>
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Russia"
+                    android:textColor="@color/gray_text"
+                    android:textSize="14sp"
+                    android:layout_weight=".4"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_gravity="center"/>
+
+
+                <CheckBox
+                    android:id="@+id/cb_russia"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:layout_gravity="end|center_vertical|center_horizontal|center"
+                    android:layout_weight="1.5"
+                    android:gravity="end|center|bottom"
+                    android:enabled="true"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="confirm"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="16sp"
+            android:layout_below="@id/ddg"
+            android:background="@drawable/border_curved_bottom"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

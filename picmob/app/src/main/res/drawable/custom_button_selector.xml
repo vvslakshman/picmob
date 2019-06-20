@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/border_ripple_pink" android:state_enabled="true" >
+
+    </item>
+    <item android:drawable="@drawable/custom_button_selector_lightpink" android:state_enabled="false" >
+
+    </item>
+    <!-- default state-->
+    <item android:drawable="@drawable/border_ripple_pink" >
+
+    </item>
+</selector>
+

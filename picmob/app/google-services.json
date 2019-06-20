@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "886635807384",
+    "firebase_url": "https://picmob-39813.firebaseio.com",
+    "project_id": "picmob-39813",
+    "storage_bucket": "picmob-39813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886635807384:android:cc40a254564f01cc",
+        "android_client_info": {
+          "package_name": "com.picmob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886635807384-2vr07g6caaff56gp6uo3qm3eq73daffh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA98Ti-OWNNd9Mjh-83ed29aLs3WMPioKk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

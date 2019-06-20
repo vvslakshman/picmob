@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/custom_toolbar" android:id="@+id/dfg"/>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@id/dfg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:src="@drawable/order_placed"/>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thank_you_for_your_order"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/we_have_received_your_order_and"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <com.picmob.AppCustomView.CustomTextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/it_will_be_finished_in_two_days"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ripple_pink"
+        android:drawableLeft="@drawable/back_arrow_white_drawable"
+        android:paddingLeft="80dp"
+        android:paddingRight="70dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/back_to_first_page"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/msnackView"
+    android:background="@color/transparent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:src="@drawable/giftbox_product"
+        android:background="@color/white"
+        android:id="@+id/imageViewFitPaper"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        android:id="@+id/imageViewWhiteFrame"/>
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/lyt_fitPicture"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="gone"
+            android:id="@+id/imageViewFitPicture"/>
+
+
+        <ImageView
+            android:id="@+id/Iv_cross"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/cros"
+            android:layout_margin="8dp"
+          />
+
+
+      <com.picmob.AppCustomView.CustomTextViewNormal
+          android:id="@+id/txt_count"
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:text="1"
+          android:layout_alignParentRight="true"
+          android:gravity="center"
+          android:elevation="1dp"
+          android:layout_margin="8dp"
+          android:textColor="@color/white"
+          android:backgroundTint="@color/colorAccent"
+          android:background="@drawable/custom_border_curverd_pink"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white">
+
+
+
+    </RelativeLayout>
+
+
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rlt_toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center"
+        android:elevation="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/transparent"></android.support.v7.widget.Toolbar>
+
+
+        <com.picmob.AppCustomView.CustomTextViewBold
+            android:layout_centerVertical="true"
+            android:id="@+id/tvTitle"
+            android:visibility="visible"
+            android:text=""
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text"
+            android:textSize="18sp"/>
+
+
+        <GridLayout
+            android:layout_width="70dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:columnCount="2">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+
+                <ImageView
+                    android:id="@+id/Iv_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/giftbox"
+                    />
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:id="@+id/txt_counter"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@drawable/custom_border_counter"
+                    android:layout_gravity="top|end"/>
+
+
+            </FrameLayout>
+        </GridLayout>
+
+        <!--<View-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:layout_below="@id/tvTitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:elevation="1dp"-->
+        <!--android:background="@color/lighter_gray"/>-->
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_below="@id/rlt_toolbar"
+        android:layout_above="@id/btn_addCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/df"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="220dp"
+            />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:ci_height="5dp"
+            app:ci_width="5dp"
+            app:ci_drawable="@drawable/dd"
+            app:ci_margin="4dp"
+            app:ci_drawable_unselected="@drawable/whiteroundindicator"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/df"
+        android:layout_margin="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.picmob.AppCustomView.CustomTextViewBold
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dfgdfv dfdf fdfsfs dfsewdfs  gdfs"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/gray_text"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_color"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewColor"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_size"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewSize"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <com.picmob.AppCustomView.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_quantity"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_weight="0.8"
+                android:textColor="@color/gray_text"
+                android:textSize="16sp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_border_curverd_pink"
+                android:layout_weight="1.9">
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_less"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"/>
+
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:layout_weight="0.45"
+                    android:textColor="@color/gray_text"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"/>
+
+
+                <com.picmob.AppCustomView.CustomTextViewNormal
+                    android:id="@+id/txt_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.6"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_colon"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/gray_text"
+                    android:textSize="16sp"/>
+
+
+
+                <com.picmob.AppCustomView.CustomTextViewBold
+                    android:id="@+id/txt_price"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50.00"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_addCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_cart"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/cartdrawable"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:background="@drawable/border_ripple_pink"
+     />
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    card_view:cardElevation="3dp"
+    android:elevation="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/gray_text"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:id="@+id/linlayout"
+                android:clickable="true"
+                android:background="@drawable/border_curved_top"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/dds"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/selected_photo"
+                        android:scaleType="fitXY"
+                        android:padding="0.2dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_curved_bottom"
+                    android:backgroundTint="@color/colorAccent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <com.picmob.AppCustomView.CustomTextViewNormal
+                            android:id="@+id/txt_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 x 15cm"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="14sp"/>
+
+                        <com.picmob.AppCustomView.CustomTextViewBold
+                            android:id="@+id/txt_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$ 0.16"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal">
+
+                        <com.picmob.AppCustomView.CustomTextViewBold
+                            android:id="@+id/txt_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="STANDARd"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/txt_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_marginRight="0dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="12sp"/>
+
+                        <RelativeLayout
+                            android:layout_width="24dp"
+                            android:layout_height="22dp"
+                            android:gravity="center"
+                            android:layout_gravity="bottom">
+
+                            <!--<TextView-->
+                            <!--android:layout_width="12dp"-->
+                            <!--android:layout_height="13dp"-->
+                            <!--android:text="+"-->
+                            <!--android:shadowColor="@color/red"-->
+                            <!--android:shadowDx="0"-->
+                            <!--android:shadowDy="0"-->
+                            <!--android:shadowRadius="50"-->
+                            <!--android:textColor="@color/darker_gray"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_marginTop="1dp"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:textSize="12sp"/>-->
+
+
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/brickwithpm"
+                                android:layout_gravity="center"/>
+
+
+                            <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="-"-->
+                            <!--android:shadowColor="@color/red"-->
+                            <!--android:shadowDx="5.5"-->
+                            <!--android:shadowDy="5.3"-->
+                            <!--android:shadowRadius="5.6"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:textColor="@color/darker_gray"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:textSize="12sp"/>-->
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginLeft="0dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </android.support.v7.widget.CardView>

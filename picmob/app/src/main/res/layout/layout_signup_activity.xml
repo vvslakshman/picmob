@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/custom_toolbar" android:id="@+id/dfg"/>
+
+
+        <LinearLayout
+        android:layout_below="@id/dfg"
+        android:id="@+id/lkj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_lightgray_border"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp">
+
+
+                <com.picmob.AppCustomView.CustomEditTextBold
+                    android:id="@+id/editfirst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionDone"
+                    android:backgroundTint="@color/white"
+                    app:met_hideUnderline="true"
+                    android:hint="@string/first_name"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_lightgray_border"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp">
+
+                <com.picmob.AppCustomView.CustomEditTextBold
+                    android:id="@+id/editLast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionDone"
+                    android:backgroundTint="@color/white"
+                    app:met_hideUnderline="true"
+                    android:hint="@string/last_name"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/email"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/enter_phone_number"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/password"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_lightgray_border">
+
+
+            <com.picmob.AppCustomView.CustomEditTextBold
+                android:id="@+id/editConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/white"
+                app:met_hideUnderline="true"
+                android:hint="@string/confirm_password"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp">
+
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/sign_up"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
